@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hotel-booking": {
+    "HotelBookingSystem": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -35,7 +35,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hotel-booking",
+            "outputPath": "dist/HotelBookingSystem",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -89,22 +89,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hotel-booking:build"
+            "browserTarget": "HotelBookingSystem:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hotel-booking:build:production"
+              "browserTarget": "HotelBookingSystem:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hotel-booking:build"
+            "browserTarget": "HotelBookingSystem:build"
           }
         }
       }
     }
   },
-  "defaultProject": "hotel-booking"
+  "defaultProject": "HotelBookingSystem"
 }
